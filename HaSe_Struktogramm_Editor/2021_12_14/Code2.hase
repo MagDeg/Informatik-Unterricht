@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Program Identifier="HaSE Hamster StruktogrammEditor www.schmaeck.de/hase" Version="20080901" Name="Hamster-Struktogramm">
+  <Method Name="main" Type="void" Width="400">
+    <ParameterList />
+    <SEL>
+      <While>
+        <Condition Text="vornFrei()" IsAtomic="true" Composition="-1" />
+        <SEL>
+          <Block Text="geheSammleAllesUndLinks();" Type="1">
+            <Condition Text="true" IsAtomic="true" Composition="-1" />
+          </Block>
+        </SEL>
+      </While>
+      <Block Text="drehe180Grad();" Type="1">
+        <Condition Text="true" IsAtomic="true" Composition="-1" />
+      </Block>
+      <While>
+        <Condition Text="vornFrei()" IsAtomic="true" Composition="-1" />
+        <SEL>
+          <Block Text="vor();" Type="0">
+            <Condition Text="true" IsAtomic="true" Composition="-1" />
+          </Block>
+        </SEL>
+      </While>
+      <Block Text="rechtsUm();" Type="1">
+        <Condition Text="true" IsAtomic="true" Composition="-1" />
+      </Block>
+      <Block Text="vor();" Type="0">
+        <Condition Text="true" IsAtomic="true" Composition="-1" />
+      </Block>
+      <While>
+        <Condition Text="maulLeer()" IsAtomic="false" Composition="0">
+          <Condition Text="maulLeer()" IsAtomic="true" Composition="-1" />
+          <Condition Text="true" IsAtomic="true" Composition="-1" />
+        </Condition>
+        <SEL>
+          <Block Text="gib();" Type="0">
+            <Condition Text="true" IsAtomic="true" Composition="-1" />
+          </Block>
+        </SEL>
+      </While>
+      <Block Text="drehe180Grad();" Type="1">
+        <Condition Text="true" IsAtomic="true" Composition="-1" />
+      </Block>
+      <Block Text="vor();" Type="0">
+        <Condition Text="true" IsAtomic="true" Composition="-1" />
+      </Block>
+    </SEL>
+  </Method>
+  <Method Name="rechtsUm" Type="void" Width="400">
+    <ParameterList />
+    <SEL>
+      <Block Text="linksUm();" Type="0">
+        <Condition Text="true" IsAtomic="true" Composition="-1" />
+      </Block>
+      <Block Text="linksUm();" Type="0">
+        <Condition Text="true" IsAtomic="true" Composition="-1" />
+      </Block>
+      <Block Text="linksUm();" Type="0">
+        <Condition Text="true" IsAtomic="true" Composition="-1" />
+      </Block>
+    </SEL>
+  </Method>
+  <Method Name="geheSammleAllesUndLinks" Type="void" Width="400">
+    <ParameterList />
+    <SEL>
+      <While>
+        <Condition Text="vornFrei()" IsAtomic="true" Composition="-1" />
+        <SEL>
+          <If Seperator="0.5">
+            <Condition Text="kornDa()" IsAtomic="true" Composition="-1" />
+            <SEL>
+              <Block Text="nimm();" Type="0">
+                <Condition Text="true" IsAtomic="true" Composition="-1" />
+              </Block>
+              <Block Text="linksUm();" Type="0">
+                <Condition Text="true" IsAtomic="true" Composition="-1" />
+              </Block>
+            </SEL>
+            <SEL>
+              <Block Text="vor();" Type="0">
+                <Condition Text="true" IsAtomic="true" Composition="-1" />
+              </Block>
+            </SEL>
+          </If>
+        </SEL>
+      </While>
+    </SEL>
+  </Method>
+  <Method Name="drehe180Grad" Type="void" Width="400">
+    <ParameterList />
+    <SEL>
+      <Block Text="linksUm();" Type="0">
+        <Condition Text="true" IsAtomic="true" Composition="-1" />
+      </Block>
+      <Block Text="linksUm();" Type="0">
+        <Condition Text="true" IsAtomic="true" Composition="-1" />
+      </Block>
+    </SEL>
+  </Method>
+</Program>
+

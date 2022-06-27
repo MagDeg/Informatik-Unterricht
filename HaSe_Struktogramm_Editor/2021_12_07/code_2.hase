@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Program Identifier="HaSE Hamster StruktogrammEditor www.schmaeck.de/hase" Version="20080901" Name="Hamster-Struktogramm">
+  <Method Name="main" Type="void" Width="400">
+    <ParameterList />
+    <SEL>
+      <Block Text="vor();" Type="0">
+        <Condition Text="true" IsAtomic="true" Composition="-1" />
+      </Block>
+      <While>
+        <Condition Text="vornFrei()" IsAtomic="false" Composition="0">
+          <Condition Text="vornFrei()" IsAtomic="true" Composition="-1" />
+          <Condition Text="true" IsAtomic="true" Composition="-1" />
+        </Condition>
+        <SEL>
+          <Block Text="geheStufeAuf();" Type="1">
+            <Condition Text="true" IsAtomic="true" Composition="-1" />
+          </Block>
+        </SEL>
+      </While>
+      <Block Text="vor();" Type="0">
+        <Condition Text="true" IsAtomic="true" Composition="-1" />
+      </Block>
+      <While>
+        <Condition Text="untenFrei()" IsAtomic="true" Composition="-1" />
+        <SEL>
+          <Block Text="geheStufeAb();" Type="1">
+            <Condition Text="true" IsAtomic="true" Composition="-1" />
+          </Block>
+        </SEL>
+      </While>
+    </SEL>
+  </Method>
+  <Method Name="rechtsUm" Type="void" Width="400">
+    <ParameterList />
+    <SEL>
+      <Block Text="linksUm();" Type="0">
+        <Condition Text="true" IsAtomic="true" Composition="-1" />
+      </Block>
+      <Block Text="linksUm();" Type="0">
+        <Condition Text="true" IsAtomic="true" Composition="-1" />
+      </Block>
+      <Block Text="linksUm();" Type="0">
+        <Condition Text="true" IsAtomic="true" Composition="-1" />
+      </Block>
+    </SEL>
+  </Method>
+  <Method Name="geheStufeAuf" Type="void" Width="400">
+    <ParameterList />
+    <SEL>
+      <Block Text="linksUm();" Type="0">
+        <Condition Text="true" IsAtomic="true" Composition="-1" />
+      </Block>
+      <Block Text="vor();" Type="0">
+        <Condition Text="true" IsAtomic="true" Composition="-1" />
+      </Block>
+      <Block Text="rechtsUm();" Type="1">
+        <Condition Text="true" IsAtomic="true" Composition="-1" />
+      </Block>
+      <Block Text="vor();" Type="0">
+        <Condition Text="true" IsAtomic="true" Composition="-1" />
+      </Block>
+    </SEL>
+  </Method>
+  <Method Name="untenFrei" Type="boolean" Width="400">
+    <ParameterList />
+    <SEL>
+      <Block Text="rechtsUm();" Type="1">
+        <Condition Text="true" IsAtomic="true" Composition="-1" />
+      </Block>
+      <If Seperator="0.5">
+        <Condition Text="vornFrei()" IsAtomic="true" Composition="-1" />
+        <SEL>
+          <Block Text="linksUm();" Type="0">
+            <Condition Text="true" IsAtomic="true" Composition="-1" />
+          </Block>
+          <Block Text="return;" Type="4">
+            <Condition Text="true" IsAtomic="true" Composition="-1" />
+          </Block>
+        </SEL>
+        <SEL>
+          <Block Text="linksUm();" Type="0">
+            <Condition Text="true" IsAtomic="true" Composition="-1" />
+          </Block>
+          <Block Text="return;" Type="4">
+            <Condition Text="false" IsAtomic="true" Composition="-1" />
+          </Block>
+        </SEL>
+      </If>
+    </SEL>
+  </Method>
+  <Method Name="geheStufeAb" Type="void" Width="400">
+    <ParameterList />
+    <SEL>
+      <Block Text="rechtsUm();" Type="1">
+        <Condition Text="true" IsAtomic="true" Composition="-1" />
+      </Block>
+      <Block Text="vor();" Type="0">
+        <Condition Text="true" IsAtomic="true" Composition="-1" />
+      </Block>
+      <Block Text="linksUm();" Type="0">
+        <Condition Text="true" IsAtomic="true" Composition="-1" />
+      </Block>
+      <Block Text="vor();" Type="0">
+        <Condition Text="true" IsAtomic="true" Composition="-1" />
+      </Block>
+    </SEL>
+  </Method>
+</Program>
+

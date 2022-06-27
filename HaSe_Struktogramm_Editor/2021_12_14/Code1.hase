@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Program Identifier="HaSE Hamster StruktogrammEditor www.schmaeck.de/hase" Version="20080901" Name="Hamster-Struktogramm">
+  <Method Name="main" Type="void" Width="813">
+    <ParameterList />
+    <SEL>
+      <Block Text="geheBisWandSammleUndGib();" Type="1">
+        <Condition Text="true" IsAtomic="true" Composition="-1" />
+      </Block>
+      <While>
+        <Condition Text="rechtsLinksNichtFrei()" IsAtomic="false" Composition="0">
+          <Condition Text="rechtsLinksNichtFrei()" IsAtomic="true" Composition="-1" />
+          <Condition Text="true" IsAtomic="true" Composition="-1" />
+        </Condition>
+        <SEL>
+          <Block Text="geheBisWandSammleUndGib();" Type="1">
+            <Condition Text="true" IsAtomic="true" Composition="-1" />
+          </Block>
+        </SEL>
+      </While>
+      <While>
+        <Condition Text="maulLeer()" IsAtomic="false" Composition="0">
+          <Condition Text="maulLeer()" IsAtomic="true" Composition="-1" />
+          <Condition Text="true" IsAtomic="true" Composition="-1" />
+        </Condition>
+        <SEL>
+          <Block Text="gib();" Type="0">
+            <Condition Text="true" IsAtomic="true" Composition="-1" />
+          </Block>
+        </SEL>
+      </While>
+      <Block Text="vor();" Type="0">
+        <Condition Text="true" IsAtomic="true" Composition="-1" />
+      </Block>
+    </SEL>
+  </Method>
+  <Method Name="geheBisWandSammleUndGib" Type="void" Width="400">
+    <ParameterList />
+    <SEL>
+      <While>
+        <Condition Text="vornFrei()" IsAtomic="true" Composition="-1" />
+        <SEL>
+          <Block Text="vor();" Type="0">
+            <Condition Text="true" IsAtomic="true" Composition="-1" />
+          </Block>
+          <If Seperator="0.5">
+            <Condition Text="kornDa()" IsAtomic="true" Composition="-1" />
+            <SEL>
+              <Block Text="nimm();" Type="0">
+                <Condition Text="true" IsAtomic="true" Composition="-1" />
+              </Block>
+            </SEL>
+            <SEL>
+              <Block Text="gib();" Type="0">
+                <Condition Text="true" IsAtomic="true" Composition="-1" />
+              </Block>
+            </SEL>
+          </If>
+        </SEL>
+      </While>
+      <Block Text="linksUm();" Type="0">
+        <Condition Text="true" IsAtomic="true" Composition="-1" />
+      </Block>
+    </SEL>
+  </Method>
+  <Method Name="rechtsUm" Type="void" Width="400">
+    <ParameterList />
+    <SEL>
+      <Block Text="linksUm();" Type="0">
+        <Condition Text="true" IsAtomic="true" Composition="-1" />
+      </Block>
+      <Block Text="linksUm();" Type="0">
+        <Condition Text="true" IsAtomic="true" Composition="-1" />
+      </Block>
+      <Block Text="linksUm();" Type="0">
+        <Condition Text="true" IsAtomic="true" Composition="-1" />
+      </Block>
+    </SEL>
+  </Method>
+  <Method Name="rechtsLinksNichtFrei" Type="boolean" Width="909">
+    <ParameterList />
+    <SEL>
+      <Block Text="linksUm();" Type="0">
+        <Condition Text="true" IsAtomic="true" Composition="-1" />
+      </Block>
+      <If Seperator="0.5">
+        <Condition Text="vornFrei()" IsAtomic="true" Composition="-1" />
+        <SEL>
+          <Block Text="rechtsUm();" Type="1">
+            <Condition Text="true" IsAtomic="true" Composition="-1" />
+          </Block>
+          <Block Text="return;" Type="4">
+            <Condition Text="false" IsAtomic="true" Composition="-1" />
+          </Block>
+        </SEL>
+        <SEL>
+          <Block Text="rechtsUm();" Type="1">
+            <Condition Text="true" IsAtomic="true" Composition="-1" />
+          </Block>
+          <Block Text="rechtsUm();" Type="1">
+            <Condition Text="true" IsAtomic="true" Composition="-1" />
+          </Block>
+          <If Seperator="0.5">
+            <Condition Text="vornFrei()" IsAtomic="true" Composition="-1" />
+            <SEL>
+              <Block Text="linksUm();" Type="0">
+                <Condition Text="true" IsAtomic="true" Composition="-1" />
+              </Block>
+              <Block Text="return;" Type="4">
+                <Condition Text="false" IsAtomic="true" Composition="-1" />
+              </Block>
+            </SEL>
+            <SEL>
+              <Block Text="linksUm();" Type="0">
+                <Condition Text="true" IsAtomic="true" Composition="-1" />
+              </Block>
+              <Block Text="return;" Type="4">
+                <Condition Text="true" IsAtomic="true" Composition="-1" />
+              </Block>
+            </SEL>
+          </If>
+        </SEL>
+      </If>
+    </SEL>
+  </Method>
+</Program>
+

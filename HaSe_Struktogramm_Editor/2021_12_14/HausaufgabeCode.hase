@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Program Identifier="HaSE Hamster StruktogrammEditor www.schmaeck.de/hase" Version="20080901" Name="Hamster-Struktogramm">
+  <Method Name="main" Type="void" Width="400">
+    <ParameterList />
+    <SEL>
+      <Block Text="vor();" Type="0">
+        <Condition Text="true" IsAtomic="true" Composition="-1" />
+      </Block>
+      <Block Text="linksUm();" Type="0">
+        <Condition Text="true" IsAtomic="true" Composition="-1" />
+      </Block>
+      <Block Text="geheBisWandUndNimmAlles();" Type="1">
+        <Condition Text="true" IsAtomic="true" Composition="-1" />
+      </Block>
+      <Block Text="rechtsUm();" Type="1">
+        <Condition Text="true" IsAtomic="true" Composition="-1" />
+      </Block>
+      <Block Text="geheStufenAbwaertsUndNimmAlles();" Type="1">
+        <Condition Text="true" IsAtomic="true" Composition="-1" />
+      </Block>
+      <Block Text="linksUm();" Type="0">
+        <Condition Text="true" IsAtomic="true" Composition="-1" />
+      </Block>
+      <Block Text="geheBisWandUndNimmAlles();" Type="1">
+        <Condition Text="true" IsAtomic="true" Composition="-1" />
+      </Block>
+      <Block Text="drehe180Grad();" Type="1">
+        <Condition Text="true" IsAtomic="true" Composition="-1" />
+      </Block>
+      <Block Text="geheBisWand();" Type="1">
+        <Condition Text="true" IsAtomic="true" Composition="-1" />
+      </Block>
+      <Block Text="rechtsUm();" Type="1">
+        <Condition Text="true" IsAtomic="true" Composition="-1" />
+      </Block>
+      <Block Text="geheBisWand();" Type="1">
+        <Condition Text="true" IsAtomic="true" Composition="-1" />
+      </Block>
+      <Block Text="wirfKoernerWeg();" Type="1">
+        <Condition Text="true" IsAtomic="true" Composition="-1" />
+      </Block>
+    </SEL>
+  </Method>
+  <Method Name="rechtsUm" Type="void" Width="400">
+    <ParameterList />
+    <SEL>
+      <Block Text="linksUm();" Type="0">
+        <Condition Text="true" IsAtomic="true" Composition="-1" />
+      </Block>
+      <Block Text="linksUm();" Type="0">
+        <Condition Text="true" IsAtomic="true" Composition="-1" />
+      </Block>
+      <Block Text="linksUm();" Type="0">
+        <Condition Text="true" IsAtomic="true" Composition="-1" />
+      </Block>
+    </SEL>
+  </Method>
+  <Method Name="geheBisWandUndNimmAlles" Type="void" Width="400">
+    <ParameterList />
+    <SEL>
+      <While>
+        <Condition Text="vornFrei()" IsAtomic="true" Composition="-1" />
+        <SEL>
+          <Block Text="vor();" Type="0">
+            <Condition Text="true" IsAtomic="true" Composition="-1" />
+          </Block>
+          <Block Text="nimm();" Type="0">
+            <Condition Text="true" IsAtomic="true" Composition="-1" />
+          </Block>
+        </SEL>
+      </While>
+    </SEL>
+  </Method>
+  <Method Name="geheStufenAbwaertsUndNimmAlles" Type="void" Width="540">
+    <ParameterList />
+    <SEL>
+      <While>
+        <Condition Text="vornFrei()" IsAtomic="true" Composition="-1" />
+        <SEL>
+          <Block Text="vor();" Type="0">
+            <Condition Text="true" IsAtomic="true" Composition="-1" />
+          </Block>
+          <Block Text="rechtsUm();" Type="1">
+            <Condition Text="true" IsAtomic="true" Composition="-1" />
+          </Block>
+          <Block Text="vor();" Type="0">
+            <Condition Text="true" IsAtomic="true" Composition="-1" />
+          </Block>
+          <Block Text="nimm();" Type="0">
+            <Condition Text="true" IsAtomic="true" Composition="-1" />
+          </Block>
+          <Block Text="linksUm();" Type="0">
+            <Condition Text="true" IsAtomic="true" Composition="-1" />
+          </Block>
+        </SEL>
+      </While>
+    </SEL>
+  </Method>
+  <Method Name="drehe180Grad" Type="void" Width="400">
+    <ParameterList />
+    <SEL>
+      <Block Text="linksUm();" Type="0">
+        <Condition Text="true" IsAtomic="true" Composition="-1" />
+      </Block>
+      <Block Text="linksUm();" Type="0">
+        <Condition Text="true" IsAtomic="true" Composition="-1" />
+      </Block>
+    </SEL>
+  </Method>
+  <Method Name="wirfAlleKoernerWeg" Type="void" Width="400">
+    <ParameterList />
+    <SEL />
+  </Method>
+  <Method Name="geheBisWand" Type="void" Width="400">
+    <ParameterList />
+    <SEL>
+      <While>
+        <Condition Text="vornFrei()" IsAtomic="true" Composition="-1" />
+        <SEL>
+          <Block Text="vor();" Type="0">
+            <Condition Text="true" IsAtomic="true" Composition="-1" />
+          </Block>
+        </SEL>
+      </While>
+    </SEL>
+  </Method>
+  <Method Name="wirfKoernerWeg" Type="void" Width="400">
+    <ParameterList />
+    <SEL>
+      <While>
+        <Condition Text="maulLeer()" IsAtomic="false" Composition="0">
+          <Condition Text="maulLeer()" IsAtomic="true" Composition="-1" />
+          <Condition Text="true" IsAtomic="true" Composition="-1" />
+        </Condition>
+        <SEL>
+          <Block Text="gib();" Type="0">
+            <Condition Text="true" IsAtomic="true" Composition="-1" />
+          </Block>
+        </SEL>
+      </While>
+    </SEL>
+  </Method>
+  <Method Name="tueEtwas" Type="void" Width="400">
+    <ParameterList />
+    <SEL />
+  </Method>
+</Program>
+

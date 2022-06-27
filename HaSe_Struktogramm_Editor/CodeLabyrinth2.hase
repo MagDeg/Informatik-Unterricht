@@ -1,0 +1,450 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Program Identifier="HaSE Hamster StruktogrammEditor www.schmaeck.de/hase" Version="20080901" Name="Hamster-Struktogramm">
+  <Method Name="main" Type="void" Width="1753">
+    <ParameterList />
+    <SEL>
+      <If Seperator="0.5">
+        <Condition Text="vornFrei()" IsAtomic="true" Composition="-1" />
+        <SEL>
+          <Block Text="vor();" Type="0">
+            <Condition Text="true" IsAtomic="true" Composition="-1" />
+          </Block>
+        </SEL>
+        <SEL>
+          <Block Text=";" Type="0">
+            <Condition Text="true" IsAtomic="true" Composition="-1" />
+          </Block>
+        </SEL>
+      </If>
+      <While>
+        <Condition Text="true" IsAtomic="true" Composition="-1" />
+        <SEL>
+          <If Seperator="0.959099">
+            <Condition Text="kornDa()" IsAtomic="true" Composition="-1" />
+            <SEL>
+              <Block Text="nimm();" Type="0">
+                <Condition Text="true" IsAtomic="true" Composition="-1" />
+              </Block>
+              <If Seperator="0.5">
+                <Condition Text="kornDa()" IsAtomic="true" Composition="-1" />
+                <SEL>
+                  <Block Text="nimm();" Type="0">
+                    <Condition Text="true" IsAtomic="true" Composition="-1" />
+                  </Block>
+                  <Block Text="break;" Type="2">
+                    <Condition Text="true" IsAtomic="true" Composition="-1" />
+                  </Block>
+                </SEL>
+                <SEL>
+                  <Block Text="gib();" Type="0">
+                    <Condition Text="true" IsAtomic="true" Composition="-1" />
+                  </Block>
+                  <Block Text="linksUm();" Type="0">
+                    <Condition Text="true" IsAtomic="true" Composition="-1" />
+                  </Block>
+                  <Block Text="linksUm();" Type="0">
+                    <Condition Text="true" IsAtomic="true" Composition="-1" />
+                  </Block>
+                  <If Seperator="0.5">
+                    <Condition Text="vornFrei()" IsAtomic="false" Composition="1">
+                      <Condition Text="vornFrei()" IsAtomic="true" Composition="-1" />
+                      <Condition Text="true" IsAtomic="false" Composition="0">
+                        <Condition Text="VorneKorn()" IsAtomic="true" Composition="-1" />
+                        <Condition Text="true" IsAtomic="true" Composition="-1" />
+                      </Condition>
+                    </Condition>
+                    <SEL>
+                      <Block Text="vor();" Type="0">
+                        <Condition Text="true" IsAtomic="true" Composition="-1" />
+                      </Block>
+                      <Block Text="DEF_Labyrinth();" Type="1">
+                        <Condition Text="true" IsAtomic="true" Composition="-1" />
+                      </Block>
+                    </SEL>
+                    <SEL>
+                      <If Seperator="0.5">
+                        <Condition Text="rechtsFrei()" IsAtomic="true" Composition="-1" />
+                        <SEL>
+                          <Block Text="rechtsUm();" Type="1">
+                            <Condition Text="true" IsAtomic="true" Composition="-1" />
+                          </Block>
+                          <If Seperator="0.5">
+                            <Condition Text="vornFrei()" IsAtomic="false" Composition="1">
+                              <Condition Text="vornFrei()" IsAtomic="true" Composition="-1" />
+                              <Condition Text="true" IsAtomic="false" Composition="0">
+                                <Condition Text="VorneKorn()" IsAtomic="true" Composition="-1" />
+                                <Condition Text="true" IsAtomic="true" Composition="-1" />
+                              </Condition>
+                            </Condition>
+                            <SEL>
+                              <Block Text="vor();" Type="0">
+                                <Condition Text="true" IsAtomic="true" Composition="-1" />
+                              </Block>
+                              <Block Text="DEF_Labyrinth();" Type="1">
+                                <Condition Text="true" IsAtomic="true" Composition="-1" />
+                              </Block>
+                            </SEL>
+                            <SEL />
+                          </If>
+                        </SEL>
+                        <SEL>
+                          <If Seperator="0.5">
+                            <Condition Text="linksFrei()" IsAtomic="true" Composition="-1" />
+                            <SEL>
+                              <Block Text="linksUm();" Type="0">
+                                <Condition Text="true" IsAtomic="true" Composition="-1" />
+                              </Block>
+                              <If Seperator="0.5">
+                                <Condition Text="vornFrei()" IsAtomic="false" Composition="1">
+                                  <Condition Text="vornFrei()" IsAtomic="true" Composition="-1" />
+                                  <Condition Text="true" IsAtomic="false" Composition="0">
+                                    <Condition Text="VorneKorn()" IsAtomic="true" Composition="-1" />
+                                    <Condition Text="true" IsAtomic="true" Composition="-1" />
+                                  </Condition>
+                                </Condition>
+                                <SEL>
+                                  <Block Text="vor();" Type="0">
+                                    <Condition Text="true" IsAtomic="true" Composition="-1" />
+                                  </Block>
+                                  <Block Text="DEF_Labyrinth();" Type="1">
+                                    <Condition Text="true" IsAtomic="true" Composition="-1" />
+                                  </Block>
+                                </SEL>
+                                <SEL />
+                              </If>
+                            </SEL>
+                            <SEL>
+                              <Block Text=";" Type="0">
+                                <Condition Text="true" IsAtomic="true" Composition="-1" />
+                              </Block>
+                            </SEL>
+                          </If>
+                        </SEL>
+                      </If>
+                    </SEL>
+                  </If>
+                </SEL>
+              </If>
+            </SEL>
+            <SEL>
+              <Block Text="DEF_Labyrinth();" Type="1">
+                <Condition Text="true" IsAtomic="true" Composition="-1" />
+              </Block>
+            </SEL>
+          </If>
+        </SEL>
+      </While>
+    </SEL>
+  </Method>
+  <Method Name="rechtsUm" Type="void" Width="400">
+    <ParameterList />
+    <SEL>
+      <Block Text="linksUm();" Type="0">
+        <Condition Text="true" IsAtomic="true" Composition="-1" />
+      </Block>
+      <Block Text="linksUm();" Type="0">
+        <Condition Text="true" IsAtomic="true" Composition="-1" />
+      </Block>
+      <Block Text="linksUm();" Type="0">
+        <Condition Text="true" IsAtomic="true" Composition="-1" />
+      </Block>
+    </SEL>
+  </Method>
+  <Method Name="rechtsFrei" Type="boolean" Width="400">
+    <ParameterList />
+    <SEL>
+      <Block Text="rechtsUm();" Type="1">
+        <Condition Text="true" IsAtomic="true" Composition="-1" />
+      </Block>
+      <If Seperator="0.5">
+        <Condition Text="vornFrei()" IsAtomic="true" Composition="-1" />
+        <SEL>
+          <Block Text="linksUm();" Type="0">
+            <Condition Text="true" IsAtomic="true" Composition="-1" />
+          </Block>
+          <Block Text="return;" Type="4">
+            <Condition Text="true" IsAtomic="true" Composition="-1" />
+          </Block>
+        </SEL>
+        <SEL>
+          <Block Text="linksUm();" Type="0">
+            <Condition Text="true" IsAtomic="true" Composition="-1" />
+          </Block>
+          <Block Text="return;" Type="4">
+            <Condition Text="false" IsAtomic="true" Composition="-1" />
+          </Block>
+        </SEL>
+      </If>
+    </SEL>
+  </Method>
+  <Method Name="linksFrei" Type="boolean" Width="400">
+    <ParameterList />
+    <SEL>
+      <Block Text="linksUm();" Type="0">
+        <Condition Text="true" IsAtomic="true" Composition="-1" />
+      </Block>
+      <If Seperator="0.5">
+        <Condition Text="vornFrei()" IsAtomic="true" Composition="-1" />
+        <SEL>
+          <Block Text="rechtsUm();" Type="1">
+            <Condition Text="true" IsAtomic="true" Composition="-1" />
+          </Block>
+          <Block Text="return;" Type="4">
+            <Condition Text="true" IsAtomic="true" Composition="-1" />
+          </Block>
+        </SEL>
+        <SEL>
+          <Block Text="rechtsUm();" Type="1">
+            <Condition Text="true" IsAtomic="true" Composition="-1" />
+          </Block>
+          <Block Text="return;" Type="4">
+            <Condition Text="false" IsAtomic="true" Composition="-1" />
+          </Block>
+        </SEL>
+      </If>
+    </SEL>
+  </Method>
+  <Method Name="DEF_Labyrinth" Type="void" Width="2015">
+    <ParameterList />
+    <SEL>
+      <While>
+        <Condition Text="true" IsAtomic="false" Composition="2">
+          <Condition Text="vornFrei()" IsAtomic="true" Composition="-1" />
+          <Condition Text="true" IsAtomic="false" Composition="2">
+            <Condition Text="rechtsFrei()" IsAtomic="true" Composition="-1" />
+            <Condition Text="linksFrei()" IsAtomic="true" Composition="-1" />
+          </Condition>
+        </Condition>
+        <SEL>
+          <If Seperator="0.5">
+            <Condition Text="rechtsFrei()" IsAtomic="true" Composition="1">
+              <Condition Text="rechtsFrei()" IsAtomic="true" Composition="-1" />
+              <Condition Text="true" IsAtomic="false" Composition="0">
+                <Condition Text="vornFrei()" IsAtomic="true" Composition="-1" />
+                <Condition Text="true" IsAtomic="true" Composition="-1" />
+              </Condition>
+            </Condition>
+            <SEL>
+              <Block Text="rechtsUm();" Type="1">
+                <Condition Text="true" IsAtomic="true" Composition="-1" />
+              </Block>
+              <If Seperator="0.5">
+                <Condition Text="vornFrei()" IsAtomic="false" Composition="1">
+                  <Condition Text="vornFrei()" IsAtomic="true" Composition="-1" />
+                  <Condition Text="kornDa()" IsAtomic="false" Composition="0">
+                    <Condition Text="VorneKorn()" IsAtomic="true" Composition="-1" />
+                    <Condition Text="true" IsAtomic="true" Composition="-1" />
+                  </Condition>
+                </Condition>
+                <SEL>
+                  <Block Text="vor();" Type="0">
+                    <Condition Text="true" IsAtomic="true" Composition="-1" />
+                  </Block>
+                </SEL>
+                <SEL>
+                  <Block Text=";" Type="0">
+                    <Condition Text="true" IsAtomic="true" Composition="-1" />
+                  </Block>
+                </SEL>
+              </If>
+            </SEL>
+            <SEL>
+              <If Seperator="0.5">
+                <Condition Text="vornFrei()" IsAtomic="false" Composition="1">
+                  <Condition Text="vornFrei()" IsAtomic="true" Composition="-1" />
+                  <Condition Text="true" IsAtomic="false" Composition="0">
+                    <Condition Text="VorneKorn()" IsAtomic="true" Composition="-1" />
+                    <Condition Text="true" IsAtomic="true" Composition="-1" />
+                  </Condition>
+                </Condition>
+                <SEL>
+                  <Block Text="vor();" Type="0">
+                    <Condition Text="true" IsAtomic="true" Composition="-1" />
+                  </Block>
+                </SEL>
+                <SEL>
+                  <If Seperator="0.5">
+                    <Condition Text="linksFrei()" IsAtomic="true" Composition="1">
+                      <Condition Text="linksFrei()" IsAtomic="true" Composition="-1" />
+                      <Condition Text="true" IsAtomic="false" Composition="0">
+                        <Condition Text="vornFrei()" IsAtomic="true" Composition="-1" />
+                        <Condition Text="true" IsAtomic="true" Composition="-1" />
+                      </Condition>
+                    </Condition>
+                    <SEL>
+                      <Block Text="linksUm();" Type="0">
+                        <Condition Text="true" IsAtomic="true" Composition="-1" />
+                      </Block>
+                      <If Seperator="0.5">
+                        <Condition Text="true" IsAtomic="false" Composition="1">
+                          <Condition Text="vornFrei()" IsAtomic="true" Composition="-1" />
+                          <Condition Text="true" IsAtomic="false" Composition="0">
+                            <Condition Text="VorneKorn()" IsAtomic="true" Composition="-1" />
+                            <Condition Text="true" IsAtomic="true" Composition="-1" />
+                          </Condition>
+                        </Condition>
+                        <SEL>
+                          <Block Text="vor();" Type="0">
+                            <Condition Text="true" IsAtomic="true" Composition="-1" />
+                          </Block>
+                        </SEL>
+                        <SEL>
+                          <Block Text=";" Type="0">
+                            <Condition Text="true" IsAtomic="true" Composition="-1" />
+                          </Block>
+                        </SEL>
+                      </If>
+                    </SEL>
+                    <SEL>
+                      <Block Text=";" Type="0">
+                        <Condition Text="true" IsAtomic="true" Composition="-1" />
+                      </Block>
+                    </SEL>
+                  </If>
+                </SEL>
+              </If>
+            </SEL>
+          </If>
+        </SEL>
+      </While>
+      <Block Text="linksUm();" Type="0">
+        <Condition Text="true" IsAtomic="true" Composition="-1" />
+      </Block>
+      <Block Text="linksUm();" Type="0">
+        <Condition Text="true" IsAtomic="true" Composition="-1" />
+      </Block>
+      <While>
+        <Condition Text="true" IsAtomic="false" Composition="0">
+          <Condition Text="true" IsAtomic="false" Composition="2">
+            <Condition Text="rechtsFrei()" IsAtomic="true" Composition="-1" />
+            <Condition Text="linksFrei()" IsAtomic="true" Composition="-1" />
+          </Condition>
+          <Condition Text="true" IsAtomic="true" Composition="-1" />
+        </Condition>
+        <SEL>
+          <If Seperator="0.5">
+            <Condition Text="kornDa()" IsAtomic="true" Composition="-1" />
+            <SEL>
+              <Block Text="break;" Type="2">
+                <Condition Text="true" IsAtomic="true" Composition="-1" />
+              </Block>
+            </SEL>
+            <SEL>
+              <Block Text="gib();" Type="0">
+                <Condition Text="true" IsAtomic="true" Composition="-1" />
+              </Block>
+              <Block Text="vor();" Type="0">
+                <Condition Text="true" IsAtomic="true" Composition="-1" />
+              </Block>
+            </SEL>
+          </If>
+        </SEL>
+      </While>
+    </SEL>
+  </Method>
+  <Method Name="VorneKorn" Type="boolean" Width="400">
+    <ParameterList />
+    <SEL>
+      <If Seperator="0.7074468">
+        <Condition Text="vornFrei()" IsAtomic="true" Composition="-1" />
+        <SEL>
+          <Block Text="vor();" Type="0">
+            <Condition Text="true" IsAtomic="true" Composition="-1" />
+          </Block>
+          <If Seperator="0.5">
+            <Condition Text="kornDa()" IsAtomic="true" Composition="-1" />
+            <SEL>
+              <Block Text="linksUm();" Type="0">
+                <Condition Text="true" IsAtomic="true" Composition="-1" />
+              </Block>
+              <Block Text="linksUm();" Type="0">
+                <Condition Text="true" IsAtomic="true" Composition="-1" />
+              </Block>
+              <Block Text="vor();" Type="0">
+                <Condition Text="true" IsAtomic="true" Composition="-1" />
+              </Block>
+              <Block Text="linksUm();" Type="0">
+                <Condition Text="true" IsAtomic="true" Composition="-1" />
+              </Block>
+              <Block Text="linksUm();" Type="0">
+                <Condition Text="true" IsAtomic="true" Composition="-1" />
+              </Block>
+              <Block Text="return;" Type="4">
+                <Condition Text="true" IsAtomic="true" Composition="-1" />
+              </Block>
+            </SEL>
+            <SEL>
+              <Block Text="linksUm();" Type="0">
+                <Condition Text="true" IsAtomic="true" Composition="-1" />
+              </Block>
+              <Block Text="linksUm();" Type="0">
+                <Condition Text="true" IsAtomic="true" Composition="-1" />
+              </Block>
+              <Block Text="vor();" Type="0">
+                <Condition Text="true" IsAtomic="true" Composition="-1" />
+              </Block>
+              <Block Text="linksUm();" Type="0">
+                <Condition Text="true" IsAtomic="true" Composition="-1" />
+              </Block>
+              <Block Text="linksUm();" Type="0">
+                <Condition Text="true" IsAtomic="true" Composition="-1" />
+              </Block>
+              <Block Text="return;" Type="4">
+                <Condition Text="false" IsAtomic="true" Composition="-1" />
+              </Block>
+            </SEL>
+          </If>
+        </SEL>
+        <SEL>
+          <Block Text="return;" Type="4">
+            <Condition Text="false" IsAtomic="true" Composition="-1" />
+          </Block>
+        </SEL>
+      </If>
+    </SEL>
+  </Method>
+  <Method Name="keinAusweg" Type="void" Width="400">
+    <ParameterList />
+    <SEL>
+      <If Seperator="0.5">
+        <Condition Text="rechtsFrei()" IsAtomic="true" Composition="-1" />
+        <SEL>
+          <Block Text="rechtsUm();" Type="1">
+            <Condition Text="true" IsAtomic="true" Composition="-1" />
+          </Block>
+          <If Seperator="0.5">
+            <Condition Text="VorneKorn()" IsAtomic="true" Composition="-1" />
+            <SEL>
+              <Block Text="linksUm();" Type="0">
+                <Condition Text="true" IsAtomic="true" Composition="-1" />
+              </Block>
+              <Block Text="linksUm();" Type="0">
+                <Condition Text="true" IsAtomic="true" Composition="-1" />
+              </Block>
+              <Block Text="vor();" Type="0">
+                <Condition Text="true" IsAtomic="true" Composition="-1" />
+              </Block>
+              <Block Text="linksUm();" Type="0">
+                <Condition Text="true" IsAtomic="true" Composition="-1" />
+              </Block>
+              <Block Text="linksUm();" Type="0">
+                <Condition Text="true" IsAtomic="true" Composition="-1" />
+              </Block>
+            </SEL>
+            <SEL />
+          </If>
+        </SEL>
+        <SEL />
+      </If>
+    </SEL>
+  </Method>
+  <Method Name="rechtsKorn" Type="boolean" Width="400">
+    <ParameterList />
+    <SEL>
+      <Block Text="return;" Type="4">
+        <Condition Text="true" IsAtomic="true" Composition="-1" />
+      </Block>
+    </SEL>
+  </Method>
+</Program>
+
